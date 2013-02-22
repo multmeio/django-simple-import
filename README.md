@@ -19,8 +19,16 @@ Project is not yet stable, do not use in production.
 
 ## Install
 
-## Usage
 
+## Usage
+First, update your settings file, adding the appe name in `INSTALLED_APPS`
+
+    INSTALLED_APPS = [
+        ...
+        'simple_import',
+        ...
+    ]
+    
 
 ### Security
 I'm working on the assumtion you staff users are trusted. Only users with change permission 
