@@ -21,7 +21,7 @@ Project is not yet stable, do not use in production.
 
 
 ## Usage
-First, update your settings file, adding the appe name in `INSTALLED_APPS`
+First, update your settings file, adding the app name in `INSTALLED_APPS`
 
     INSTALLED_APPS = [
         ...
@@ -29,6 +29,11 @@ First, update your settings file, adding the appe name in `INSTALLED_APPS`
         ...
     ]
     
+    
+Seconds, syncronize your database and install all migrations
+
+    ./manage.py syncb
+    ./manage.py migrate simple_import
 
 ### Security
 I'm working on the assumtion you staff users are trusted. Only users with change permission 
