@@ -35,6 +35,14 @@ Seconds, syncronize your database and install all migrations
     ./manage.py syncb
     ./manage.py migrate simple_import
 
+Third, set the new app url inside yours `your_project/urls.py`
+
+    urlpatterns = patterns('',
+        ...
+        url(r'simple_import/', include('simple_import.urls')),
+        ...
+    )
+
 ### Security
 I'm working on the assumtion you staff users are trusted. Only users with change permission 
 to a field will see it as an option. But I have not spent much time looking for ways users could
